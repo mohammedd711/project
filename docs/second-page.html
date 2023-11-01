@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/newStyle.css">
+    <title>second page</title>
+ 
+</head>
+<body class="body2">
+  <header id="headerID" class="headerClass"> 
+    <div id="divHeaderID"><img src="../imgs/imge666.jpg" alt=""></div> 
+</header>
+    <nav id="nav">
+        <ul>
+            <li id="navlist"><a href="../index.html" target="" title="home">HOME</a></li>
+            <li id="navlist"><a href="second-page.html" title="about " target="" >ACCOUNT</a></li>
+            <li id="navlist"><a href="fiest-page.html" target="">ABOUT US</a></li>
+             <li id="navlist"><a href="treepage.html" target="_blank ">MORE</a></li>
+          <!--  <li><a href="" target="_blank">MORE</a></li> -->
+          </ul>
+    </nav>
+    <button id="buttonID" type="submit">
+      cilck me
+    </button>
+      
+    <div class="form" >
+        <form action="" class="formClass" id="idForm" onsubmit="event.preventDefault(); submitForm();">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email.." required>
+          
+
+          <label for="password">PassWord</label>
+          <input type="password" id="Password" name="PassWord" placeholder="Your PassWord.." required>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Yemen</option>
+            <option value="canada">plastain</option>
+            <option value="usa">Oman</option>
+          </select>
+          <input type="radio" name="gender" value="male" checked required> Male<br>
+          <input type="radio" name="gender" value="female" required> Female<br>
+          <input type="submit" value="Submit"id="submit">
+          <!-- <input type="submit" > -->
+        
+      </div>
+      
+      <footer>
+        <div class="links">
+          <div class="divpa"><h2>to contact with us</h2></div>
+        <ul>
+          <li id="list"><a id="link" href="#">Facebook</a></li>
+          <li id="list"><a id="link" href="#">instagram</a></li>
+          <li id="list"><a id="link" href="#">Whats up</a></li>
+        </ul>
+      </div>
+      </footer>
+   
+
+      <script>
+        document.getElementById("buttonID").addEventListener("click" , function(){
+           document.getElementById("idForm").style.display="block";
+        });
+        document.getElementById("idForm").addEventListener("submit" , function(event){
+          event.preventDefault();
+        document.getElementById("idForm").style.display="none";
+        alert( "Thank You for visited");
+        });
+
+       
+      </script>
+</body>
+</html>

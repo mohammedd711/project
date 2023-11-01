@@ -1,0 +1,307 @@
+
+/* this is about the index page  */
+ body{
+    background-color: #0d0801;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 700px) {
+  #navlist {
+    float: left;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  #navlist {
+   float: right;
+   padding: 10px;
+   margin-left:  30px;
+   text-align: center;
+  }
+}
+.body2{ 
+  background-image: url("../imgs/imge5.jpg");
+  background-size: cover;
+ }
+#divHeaderID{
+  text-align: center;
+}
+/* this is about NAV  for all pages */
+nav{
+  background-color: rgb(148, 80, 16);
+  
+
+}
+/* when you hover "NAV" the color and the shap will change to anther color and anthor shap */
+nav:hover{
+  background-color: rgb(149, 114, 17);
+  
+}
+div.classIN {
+  border: 1px solid #ccc;
+}
+
+div.classIN:hover {
+  border: 1px solid #777;
+  
+}
+
+div.classIN img {
+  width: 100%;
+  height: auto;
+} 
+/* in the footer */
+ #list{
+  background-color: rgb(79, 49, 9);
+  border-radius: 0 0 50% 50% ;
+  
+}
+#list:hover{
+  background-color: #777;
+  border-radius: 50% 50% 0 0;
+}
+/* this about the links that is in the footer */
+#link{
+  color:#76be19;  
+}
+#link:hover{
+  color:rgb(31, 16, 2)
+} 
+/* this is the footer  */
+ footer{
+  
+  text-align: center;
+  background-color: #7b6627;
+  border-radius: 0 0 50% 50% ; 
+   clear: both;
+}
+/* when you hover the footer background color and the shap will change  */
+
+ footer:hover{
+  background-color: #d56d17;
+  border-radius: 50% 50% 0 0;
+}   
+
+/* this is about the first page */
+
+   input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #621e1e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: aliceblue;
+  
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #591313;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #cdd2cd;
+  
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #591313;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #cdd2cd;
+  
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #99821a;
+  color: rgb(136, 25, 25);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  animation: pulse-animation 4s infinite;
+}
+
+input[type=submit]:hover {
+  color: #4CAF50;
+  
+}
+
+
+
+.form {
+  border-radius: 5px;
+  background-color: #824508;
+  padding: 20px;
+}
+input{
+    background-color: #824508;
+    color:  #824508;
+    
+}
+input:hover{
+    background-color: rgb(117, 51, 10);
+}
+.form{
+    width: 500px;
+}
+select:hover {
+  background-color: #5f3b06;
+  color: #4CAF50;
+  
+}
+select{
+  background-color: #0e2d94;
+  color: #c3ae90;
+}
+option{
+  color: rgb(193, 49, 49);
+}
+
+#list{
+  background-color: rgb(79, 49, 9);
+  border-radius: 0 0 50% 50% ;
+  
+}
+#list:hover{
+  background-color: #777;
+  border-radius: 50% 50% 0 0;
+}
+/* the submit in the first page it will pare when you click "Conyact Us" */
+#submit{
+  background-color: #2c7d14;
+  color: #b4af9b;
+  padding: 5px;
+  border-radius: 70px ;
+}
+#submit:hover{
+  background-color: #14277d;
+  color: #b4af9b;
+  padding: 5px;
+  border-radius: 20% 40%;
+}
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(174, 156, 17, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+/* this is the button in the second page  after you enter your presonal information click "clik me " to 
+enter again or anther time  */
+#buttonID{
+  text-align: center;
+  color: #0e2d94;
+  background-color: #e15d29;
+  border-radius: 0% 50% 0 50%  ;
+  padding: 10px;
+
+}
+/* when you hover the color will change and the shap 
+hover and you will see the diffrent */
+#buttonID:hover{
+  text-align: center;
+  color: #452007;
+  background-color: #734a0d;
+  border-radius: 50% 0% 50% 0 ;
+
+}
+/* the section in the first page "about us" */
+select:hover {
+  background-color: #5f3b06;
+  color: #4CAF50;
+  
+}
+select{
+  background-color: #0e2d94;
+  color: #c3ae90;
+}
+ /*this is about the second page */
+
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+    text-align: justify;
+    color: rgb(126, 77, 3);
+  }
+  
+  * {
+    box-sizing: border-box;
+    color: azure;
+  }
+  
+   .classOut {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  } 
+  
+   @media only screen and (max-width: 700px) {
+    .classOut {
+      width: 49%;
+      margin: 6px 0;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 500px) {
+    .classOut {
+      width: 100%;
+    }
+  }
+
+  li{
+    
+    display: inline;
+    background-color: rgb(148, 80, 16);
+    border: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin: 10px; */
+}
+li:hover{
+    
+    border-radius: 100px 10px;
+    background-color: rgb(149, 114, 17);
+}
+#navlist{
+  margin: -2px 0px 2px 0px;
+  
+}
+
+ul{
+    margin-top: 50px;
+    margin-bottom: 30px; 
+}
+a{
+    color: rgb(92, 22, 22);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(12, 113, 15);
+}
+aside{
+  border: 5px solid rgb(150, 79, 12);
+  border-radius: 30px;
+  padding: 20px;
+  
+  /* width: 500px; */
+  text-align: justify;
+ /* margin-left: 40%;
+ margin-right: 40%; */
+  color: rgb(10, 61, 106);
+  
+}
+

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table with Form</title>
+  <link rel="stylesheet" href="../css/newStyle.css">
+
+</head>
+
+<style>
+    cell1.innerHTML ,cell2.innerHTML,cell3.innerHTML{
+        border: 5px rgb(167, 167, 16) solid ;
+    }
+    #formidtree{
+        background-color: rgb(42, 54, 14);
+        border: 5px black solid;
+    }
+    body{
+        background-color: rgb(6, 65, 45);
+    }
+    input[type=text],input[type=number],input[type=email]{
+        background-color: black;
+        color: aliceblue;
+        margin: 10px;
+        padding: 5px;
+    }
+    #dataTable{
+        border: rgb(61, 11, 11) 5px solid;
+        margin: 5px;
+
+    } 
+    input[type=submit]{
+        background-color: rgb(88, 88, 142);
+        color: antiquewhite;
+        margin: 50px;
+        width: 200px;
+    }
+    label{
+      margin: 10px;
+    }
+    #th2{
+    
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    }
+    #headerID{
+      text-align: center;
+    }
+    th , td{
+      border: 5px rgb(94, 64, 12) solid;
+    }
+    
+</style>
+<body>
+ 
+
+  <header id="headerID" class="headerClass"> 
+    <div id="divHeaderID"><img src="../imgs/imge666.jpg" alt=""></div> 
+</header>
+<nav id="nav">
+  <ul>
+      <li><a href="indexNEW.html" target="" title="home">HOME</a></li>
+      <li><a href="second-page.html" title="about " target="" >ACCOUNT</a></li>
+      <li><a href="fiest-page.html" target="">ABOUT US</a></li>
+      <!-- <li><a href="" target="_blank ">MORE</a></li>
+      <li><a href="" target="_blank">MORE</a></li> -->
+    </ul>
+</nav>
+  <h2>Write your account and it will printed under the page </h2>
+
+  <form id="formidtree" onsubmit="event.preventDefault(); addData();">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
+
+    <label for="phone">Phone:</label>
+    <input type="number" id="phone" required><br>
+
+    <input type="submit" value="Add Data">
+  </form>
+
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th id="th1">Name</th>
+        <th id="th2">Email</th>
+        <th id="th3">Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+  </table>
+  <footer>
+    <div class="links">
+      <div class="divpa"><h2>to contact with us</h2></div>
+    <ul>
+      <li id="list"><a id="link" href="#">Facebook</a></li>
+      <li id="list"><a id="link" href="#">instagram</a></li>
+      <li id="list"><a id="link" href="#">Whats up</a></li>
+    </ul>
+  </div>
+  </footer>
+  <script src="../js/JS.js"></script>
+</body>
+</html>

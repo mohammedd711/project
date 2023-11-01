@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/newStyle.css">
+    <title>fiest-page</title>
+    <style>
+ #linkP{
+         color: rgb(212, 192, 11);
+         border: rgb(154, 143, 14) 2px solid;
+         padding: 7px;
+         border-radius: 30%  ;
+         text-align: center;    
+         background-color: #32312d; 
+         animation: move-the-circle 3s infinite;
+         transform-origin: center center;
+         position: absolute;
+         position: relative;
+            
+             
+           } 
+ #linkP:hover{
+         background-color: #4d3a3a;
+          border-radius: 50px ;
+          position: relative;
+          top: 10px;
+           } 
+
+.form {
+  border-radius: 5px;
+  background-color: #824508;
+  padding: 20px;
+}
+input{
+    background-color: #824508;
+    color:  #b5d280;
+    
+}
+input:hover{
+    background-color: rgb(117, 51, 10);
+}
+.form{
+    width: 300px;
+}
+
+
+#idForm, #thankYouMessage {
+      display: none;
+      background-color: #da5903;
+      margin: 3px;
+      color: #0e2d94;
+      
+    }
+    #aboutUs{
+      background-color: #7d5514;
+      width: 200px;
+      text-align: center;
+      margin: 10px;
+    }
+    #aboutUs:hover{
+      background-color: #748e1d;
+      width: 200px;
+      text-align: center;
+      margin: 5px;
+      border-radius: 20%;
+    }
+    #buttonaboutUs{
+      background-color: #4CAF50;
+      text-align: center;
+      border-radius: 20%;
+      
+    }#buttonaboutUs:hover{
+      background-color: #68200b;
+      text-align: center;
+    }
+    
+  </style>
+  <script>
+    function showForm() {
+      document.getElementById("idForm").style.display = "block";
+    }
+
+    function submitForm() {
+      // Perform validation here
+
+      // Display the thank you message
+      document.getElementById("thankYouMessage").style.display = "block";
+    }
+
+  </script>
+</head>
+<body class="body1">
+  <header id="headerID" class="headerClass"> 
+     <div id="divHeaderID"><img src="../imgs/imge666.jpg" alt=""></div> 
+</header>
+    <nav id="nav">
+        <ul>
+            <li id="navlist"><a href="../index.html" target="" title="home">HOME</a></li>
+            <li id="navlist"><a href="second-page.html" title="about " target="" >ACCOUNT</a></li>
+            <li id="navlist"><a href="fiest-page.html" target="">ABOUT US</a></li>
+           <li id="navlist"><a href="treepage.html" target=" ">MORE</a></li>
+           <!--   <li><a href="" target="_blank">MORE</a></li> -->
+          </ul>
+    </nav>
+    
+    <br><br><br>
+    <aside id="IDaside">
+        <!-- <img src="image/img1.jpg" alt="" height="500px" width="500px"> -->
+        <p>The ford Model T was the first car mass produced in the U.S during the early 1900’s. The Model T had a 4 cylinder 20 horsepower engine that could reach speeds of about 40 miles an hour. They come in different colors, but they were mostly produced in black. They were relativley simple, and reliable cars. It changed the factor of automobiles and transportation because people went from horse and buggy to full out automobiles. Henry ford was the first person in the U.S to use what’s called the assembly line and it worked well to his advantage. The ford model t production line and other competing motor companies are different as ford had a different way of of building cars using assembly lines, while other companies did not use this method.
+
+            Read More
+            
+            Better Essays
+            The Effect Of Different Stakeholders Exert At Mercedes Benz
+            1661 Words
+            7 Pages
+            1.0: Introduction In this report, I am going to evaluate the influence of 
+            different stakeholders exert at Mercedes Benz. The stakeholders I will be discussing
+             is the owner of the business, customers who buy cars as they provide good quality of 
+             service, employees who help the business to perform well and making profits and the
+              Government who support Mercedes Benz because they have been running successfully 
+              throughout the years so they want to invest money to further develop the business. 
+              On the other hand, I will make the following points in my report is by commenting on
+               the level of influence that each stakeholder exerts on Mercedes Benz. I will also be
+                referring to evidence from different sources for the comments that I make. I will 
+                state the strengths and the weaknesses on the influence of different stakeholders.
+                 Also, I will make recommendations on how Mercedes Benz can do to overcome the
+                  weaknesses which can affect their performance. At the end I will write a conclusion
+                   by summarising what I wrote in the report, which stakeholders have the most 
+                   influence and which stakeholders have the least influence in Mercedes Benz.
+            
+            
+              
+              
+               <section id="aboutUs">
+                <h2>About Us</h2>
+                <button onclick="showForm()" id="buttonaboutUs">Contact Us</button>
+              </section>
+    
+              
+               <div class="form" >
+                <form action="" class="formClass" id="idForm" onsubmit="event.preventDefault(); submitForm();">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                  
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email.." required>
+                  
+        
+                  <label for="password">PassWord</label>
+                  <input type="password" id="Password" name="PassWord" placeholder="Your PassWord.." required>
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Yemen</option>
+                    <option value="canada">plastain</option>
+                    <option value="usa">Oman</option>
+                  </select><br>
+                  <input type="radio" name="gender" value="male" checked required> Male <br>
+                  <input type="radio" name="gender" value="female" required> Female<br>
+                  <input type="submit" onclick="done()" value="Submit"id="submit">
+                  <!-- <input type="submit" > -->
+                
+              </div>
+          
+              </p>
+
+
+            <section id="thankYouMessage">
+              <h3>Thank You!</h3>
+              <p>Thanks for the communication. We will get back to you soon.</p>
+            </section>
+    </aside>
+    <footer>
+        <div class="links">
+         <h2><a id="linkh2" href="second-page.html" title="contact with us " target="_blank" >to contact with us</h2></a>
+        <ul>
+          <li id="list"><a id="link" href="#">Facebook</a></li>
+          <li id="list"><a id="link" href="#">instagram</a></li>
+          <li id="list"><a id="link" href="#">Whats up</a></li>
+        </ul>
+      </div>
+      </footer>
+</body>
+</html>
